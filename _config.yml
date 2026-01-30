@@ -1,8 +1,26 @@
-theme: jekyll-theme-primer
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-
 
 title: McLear
 description: Still hacking :) -- John McLear 2026
 show_downloads: false
+
+
+baseurl: ""          # e.g. "/repo-name" if in a project site
+url: "https://mclear.com"   # change to your domain
+
+# Build settings
+markdown: GFM
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Theme (GitHub‑native, no remote_theme needed)
+theme: jekyll-theme-minimal
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .bundle
